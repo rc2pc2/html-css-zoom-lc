@@ -9,6 +9,14 @@ body{
     color: white;
     background-color: black;
     font-size: .8rem;
+    min-width: 925px;
+}
+
+.flex-centered{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 main{
@@ -18,11 +26,7 @@ main{
 }
 
 main section.gallery{
-    display: flex;
     height: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     /* align-content: center; */
 }
 
@@ -54,6 +58,42 @@ header{
     height: 70px;
     background-color: #222222;
 }
+
+header.flex-centered{
+    justify-content: space-between;
+}
+
+header > section{
+    height: 100%;
+    display: flex;
+}
+
+header > section div.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .66rem;
+}
+
+header > section div.button > i{
+    font-size: 1.4rem;
+    margin-bottom: .25rem;
+}
+
+header > section div.button > i.fa-chevron-up{
+    font-size: .66rem;
+}
+
+header > section div.button > i.fa-share-from-square{
+    color: #4bc700;
+}
+
+header > section div.button.end-meeting{
+    background-color: #4a4a4a;
+    color: red;
+}
+
 
 #taskbar{
     height: 40px;
