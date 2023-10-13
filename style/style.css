@@ -35,6 +35,12 @@ article{
     height: 150px;
     position: relative;
     padding: .25rem;
+
+    transition: filter .2s ease-out;
+}
+
+article:hover{
+    filter: brightness(1.2);
 }
 
 article img.partecipant-image{
